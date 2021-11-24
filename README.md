@@ -39,6 +39,10 @@ The contract will not be completed (pay out the amount to the walkers) until the
 
 
 
+https://user-images.githubusercontent.com/85713622/143316460-86afc85f-f94f-40ab-8ec0-33d93b404ebe.mp4
+
+
+
 ## Contributors(ing)
 This a project designed by:
 
