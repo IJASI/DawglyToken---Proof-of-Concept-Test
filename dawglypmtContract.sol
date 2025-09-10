@@ -16,13 +16,13 @@ contract paymentContract {
         successfullWlk = false; 
     }
 
-    // create modifier so the only person who can call the contract is the owner
+    // creating modifier so the only person who can call the contract is the owner
     modifier onlyOwner {
         require(msg.sender == owner);
         _;
     }
 
-    // only allocate once the service has been succesfull.
+    // only allocate once the service has been successful.
 
     modifier walkSuccessfullpmt {
         require(successfullWlk == true);
@@ -46,7 +46,7 @@ contract paymentContract {
     function payout() private walkSuccessfullpmt {
         for(uint i=0; i<walkerWallets.length; i++) {
             walkerWallets[i].transfer(pmtamountHold[walkerWallets[i]]);
-            // transferring funds from contract address to reciever address
+            // transferring funds from contract address to receiver address
         }
     }
 
