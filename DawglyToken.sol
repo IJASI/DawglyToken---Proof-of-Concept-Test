@@ -16,7 +16,7 @@ contract paymentContract {
         successfullWlk = false; 
     }
 
-    // create modifier so the only person who can call the contract is the owner
+    // creating modifier so the only person who can call the contract is the owner
     modifier onlyOwner {
         require(msg.sender == owner);
         _;
